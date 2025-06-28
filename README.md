@@ -4,7 +4,7 @@ Bienvenue ! Voici quelques-uns de mes projets :
 
 ## 📊 Projets Machine Learning
 ### Détection de maladies sur des biopsies digestives
-- [Classification d’images (biopsies digestives) avec CNN](https://github.com/emmab-collab/PyTorch/blob/main/Digestive_Biopsy_Classification_w_PyTorch_CNN.ipynb))
+- [Classification d’images (biopsies digestives) avec CNN](https://github.com/emmab-collab/PyTorch/blob/main/Digestive_Biopsy_Classification_w_PyTorch_CNN.ipynb)
 - [Classification d’images (biopsies digestives) avec ResNet](https://github.com/emmab-collab/PyTorch/blob/main/Digestive_Biopsy_Classification_w_PyTorch_ResNet.ipynb)
 
 ## 🔧 Compétences
