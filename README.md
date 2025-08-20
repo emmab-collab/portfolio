@@ -18,6 +18,8 @@ Bienvenue ! Voici quelques-uns de mes projets :
 - [Classification d’images avec CNN](https://github.com/emmab-collab/PyTorch/blob/main/Digestive_Biopsy_Classification_w_PyTorch_CNN.ipynb)
 - [Classification d’images avec ResNet](https://github.com/emmab-collab/PyTorch/blob/main/Digestive_Biopsy_Classification_w_PyTorch_ResNet.ipynb)
 
+### Détection d’anévrismes intracrâniens (Kaggle)
+- Projet en cours : travail sur l’analyse de volumes médicaux en 3D pour la détection d’anévrismes intracrâniens.
 
 ## 🔧 Compétences
 - Python, PyTorch, scikit-learn
