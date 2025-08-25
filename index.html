@@ -1,126 +1,92 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="color-scheme" content="dark light" />
-  <title>Mon Portfolio – Emmanuelle Benhaim</title>
-  <style>
-    /* ====== 1) Forcer un thème sombre (même si un thème GitHub Pages/Jekyll ajoute son propre CSS) ====== */
-    :root { color-scheme: dark; }
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      background: #0f0f12 !important; /* fond sombre global */
-      color: #e8e8e8 !important;      /* texte clair global */
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
-      line-height: 1.65;
-    }
-    /* Certains thèmes GitHub Pages/Jekyll enveloppent le contenu dans des wrappers blancs */
-    .container, .wrapper, .page, .page-content, .post, main, section, article, header, footer {
-      background: transparent !important;
-      color: inherit !important;
-    }
-    /* Liens : empêcher le violet du :visited et garder un bleu lisible */
-    a, a:link, a:visited, a:active { color: #4da6ff !important; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #0f0f12;
+    color: #eaeaea;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #2a2a2e;
+    padding-bottom: 6px;
+    color: #fff;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .card {
+    background: #1a1a1e;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  }
+  .card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #fff;
+  }
+  .card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #bdbdbd;
+  }
+  .card a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #4da6ff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .card a:hover {
+    text-decoration: underline;
+  }
+</style>
 
-    /* ====== 2) Mise en page sobre façon Antonin : titres + listes de projets ====== */
-    .container-page {
-      max-width: 920px;
-      margin: 48px auto;
-      padding: 0 20px;
-    }
-    h1 {
-      font-weight: 700;
-      font-size: clamp(28px, 4vw, 40px);
-      letter-spacing: 0.2px;
-      margin: 0 0 8px 0;
-      color: #ffffff !important; /* évite les titres violets hérités d'un ancien CSS */
-      text-align: center;
-    }
-    .tagline { 
-      text-align: center; 
-      color: #bdbdbd; 
-      margin: 0 0 28px 0; 
-      font-size: 0.98rem;
-    }
-    h2 {
-      margin-top: 36px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid #2a2a2e;
-      font-size: 1.15rem;
-      color: #ffffff !important;
-    }
-    ul.project-list { 
-      list-style: none; 
-      padding-left: 0; 
-      margin: 16px 0 0 0; 
-    }
-    .project-item { 
-      margin: 12px 0; 
-    }
-    .project-item a.title { 
-      font-weight: 600; 
-      font-size: 1.02rem; 
-    }
-    .project-item .desc { 
-      margin-left: 14px; 
-      color: #b8b8b8; 
-      font-size: 0.94rem; 
-      display: inline-block; 
-    }
+<div class="container">
+  <h1>Mon Portfolio</h1>
+  <p style="text-align:center; color:#bbb;">Bienvenue ! Voici quelques-uns de mes projets :</p>
 
-    /* Petits détails de lisibilité */
-    .skills, .contact { color: #d8d8d8; }
-    .skills li, .contact li { margin: 6px 0; }
-
-    /* Optionnel : limiter la largeur des paragraphes pour le confort de lecture */
-    p { max-width: 70ch; }
-  </style>
-</head>
-<body>
-  <div class="container-page">
-    <h1>Mon Portfolio</h1>
-    <p class="tagline">Bienvenue ! Voici quelques-uns de mes projets :</p>
-
-    <h2>📊 Projets Machine Learning</h2>
-    <ul class="project-list">
-      <li class="project-item">
-        <a class="title" href="https://github.com/emmab-collab/Machine-Learning/tree/main/Student_Mental_Health" target="_blank" rel="noopener">Détection de la dépression chez les étudiants</a>
-        <span class="desc">Analyse exploratoire et modélisation prédictive sur un dataset étudiant.</span>
-      </li>
-      <li class="project-item">
-        <a class="title" href="https://github.com/emmab-collab/Machine-Learning/blob/main/Heart_failure_detection_EDA_%2B_Modeling.ipynb" target="_blank" rel="noopener">Détection de l’insuffisance cardiaque</a>
-        <span class="desc">EDA et entraînement de modèles pour détecter le risque d'insuffisance cardiaque.</span>
-      </li>
-    </ul>
-
-    <h2>🧠 Projets Deep Learning</h2>
-    <ul class="project-list">
-      <li class="project-item">
-        <a class="title" href="https://github.com/emmab-collab/PyTorch" target="_blank" rel="noopener">Classification de biopsies digestives</a>
-        <span class="desc">CNN, DNN et ResNet appliqués à l’analyse d’images médicales.</span>
-      </li>
-      <li class="project-item">
-        <span class="title">Détection d’anévrismes intracrâniens (Kaggle)</span>
-        <span class="desc">Projet en cours : détection d’anévrismes sur volumes médicaux 3D.</span>
-      </li>
-    </ul>
-
-    <h2>🔧 Compétences</h2>
-    <ul class="skills">
-      <li>Python, PyTorch, scikit-learn</li>
-      <li>Git, VSCode</li>
-      <li>Communication écrite claire ✨</li>
-    </ul>
-
-    <h2>📫 Me contacter</h2>
-    <ul class="contact">
-      <li><a href="https://www.linkedin.com/in/emmanuelle-benhaim-6b1177166" target="_blank" rel="noopener">LinkedIn</a></li>
-      <li>Email : <a href="mailto:emma.benhaim@gmail.com">emma.benhaim@gmail.com</a></li>
-    </ul>
+  <h2>📊 Projets Machine Learning</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Détection de la dépression</h3>
+      <p>Analyse exploratoire et modélisation prédictive sur données étudiantes.</p>
+      <a href="https://github.com/emmab-collab/Machine-Learning/tree/main/Student_Mental_Health" target="_blank">Voir le projet</a>
+    </div>
+    <div class="card">
+      <h3>Insuffisance cardiaque</h3>
+      <p>Analyse exploratoire et entraînement de modèles prédictifs sur données médicales.</p>
+      <a href="https://github.com/emmab-collab/Machine-Learning/blob/main/Heart_failure_detection_EDA_%2B_Modeling.ipynb" target="_blank">Voir le projet</a>
+    </div>
   </div>
-</body>
-</html>
+
+  <h2>🧠 Projets Deep Learning</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Biopsies digestives</h3>
+      <p>Classification d’images médicales avec CNN, DNN et ResNet.</p>
+      <a href="https://github.com/emmab-collab/PyTorch" target="_blank">Voir le projet</a>
+    </div>
+    <div class="card">
+      <h3>Anévrismes intracrâniens</h3>
+      <p>Projet en cours : détection d’anévrismes sur volumes médicaux 3D.</p>
+      <a href="#">En savoir plus</a>
+    </div>
+  </div>
+</div>
