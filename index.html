@@ -5,82 +5,87 @@
   <title>Mon Portfolio – Emmanuelle Benhaim</title>
   <style>
     body {
-      font-family: sans-serif;
-      max-width: 800px;
+      font-family: Arial, sans-serif;
+      max-width: 1000px;
       margin: 40px auto;
       padding: 0 20px;
       line-height: 1.6;
       color: #333;
+      background: #fafafa;
     }
-    h1, h2, h3 {
+    h1 {
+      text-align: center;
       color: #4B0082;
     }
-    a {
+    h2 {
+      margin-top: 40px;
+      color: #4B0082;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    .card p {
+      font-size: 0.95em;
+      color: #555;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
       color: #0066cc;
       text-decoration: none;
+      font-weight: bold;
     }
-    a:hover {
+    .card a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <h1>Mon Portfolio</h1>
+  <p style="text-align:center;">Bienvenue ! Voici quelques-uns de mes projets :</p>
 
-  <p>Bienvenue ! Voici quelques-uns de mes projets :</p>
+  <h2>📊 Projets Machine Learning</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Détection de la dépression</h3>
+      <p>Analyse de données étudiantes et prédiction de la dépression à partir de variables cliniques.</p>
+      <a href="https://github.com/emmab-collab/Machine-Learning/tree/main/Student_Mental_Health" target="_blank">Voir le projet</a>
+    </div>
+    <div class="card">
+      <h3>Détection de l’insuffisance cardiaque</h3>
+      <p>Analyse exploratoire et modélisation prédictive sur un dataset médical de patients cardiaques.</p>
+      <a href="https://github.com/emmab-collab/Machine-Learning/blob/main/Heart_failure_detection_EDA_%2B_Modeling.ipynb" target="_blank">Voir le projet</a>
+    </div>
+  </div>
 
-<h2>📊 Projets Machine Learning</h2>
-
-<h3>Détection de la dépression chez les étudiants</h3>
-<ul>
-  <li>
-    <a href="https://github.com/emmab-collab/Machine-Learning/blob/main/Student_Mental_Health/EDA.ipynb">
-      Analyse exploratoire (EDA)
-    </a>
-  </li>
-  <li>
-    <a href="https://github.com/emmab-collab/Machine-Learning/blob/main/Student_Mental_Health/Preprocessing_and_Modeling.ipynb">
-      Prétraitement et modélisation
-    </a>
-  </li>
-</ul>
-
-<h3>Détection de l’insuffisance cardiaque</h3>
-<ul>
-  <li>
-    <a href="https://github.com/emmab-collab/Machine-Learning/blob/main/Heart_failure_detection_EDA_%2B_Modeling.ipynb">
-      Analyse exploratoire et modélisation
-    </a>
-  </li>
-</ul>
-
-<h2>🧠 Projets Deep Learning</h2>
-
-<h3>Détection de maladies sur des biopsies digestives</h3>
-<ul>
-  <li>
-    <a href="https://github.com/emmab-collab/PyTorch/blob/main/Digestive_Biopsy_Classification_w_PyTorch_DNN.ipynb">
-      Classification d’images avec DNN
-    </a>
-  </li>
-  <li>
-    <a href="https://github.com/emmab-collab/PyTorch/blob/main/Digestive_Biopsy_Classification_w_PyTorch_CNN.ipynb">
-      Classification d’images avec CNN
-    </a>
-  </li>
-  <li>
-    <a href="https://github.com/emmab-collab/PyTorch/blob/main/Digestive_Biopsy_Classification_w_PyTorch_ResNet.ipynb">
-      Classification d’images avec ResNet
-    </a>
-  </li>
-</ul>
-
-<h3>Détection d’anévrismes intracrâniens (Kaggle)</h3>
-<ul>
-  <li>
-    Projet en cours : détection d’anévrismes sur volumes médicaux 3D.
-  </li>
-</ul>
+  <h2>🧠 Projets Deep Learning</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Biopsies digestives</h3>
+      <p>Classification d’images médicales avec différents modèles : DNN, CNN et ResNet.</p>
+      <a href="https://github.com/emmab-collab/PyTorch" target="_blank">Voir le projet</a>
+    </div>
+    <div class="card">
+      <h3>Détection d’anévrismes (Kaggle)</h3>
+      <p>Projet en cours sur la détection d’anévrismes dans des volumes médicaux 3D.</p>
+      <a href="#" target="_blank">En savoir plus</a>
+    </div>
+  </div>
 
   <h2>🔧 Compétences</h2>
   <ul>
