@@ -6,86 +6,79 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 1000px;
+      max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
       line-height: 1.6;
-      color: #333;
-      background: #fafafa;
+      color: #eaeaea;
+      background: #111;
     }
     h1 {
       text-align: center;
-      color: #4B0082;
+      color: #fff;
     }
     h2 {
       margin-top: 40px;
-      color: #4B0082;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 5px;
+      color: #fff;
+      border-bottom: 1px solid #333;
+      padding-bottom: 4px;
+      font-size: 1.4em;
     }
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
+    ul {
+      list-style: none;
+      padding-left: 0;
     }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    li {
+      margin: 12px 0;
     }
-    .card h3 {
-      margin-top: 0;
-      color: #333;
-    }
-    .card p {
-      font-size: 0.95em;
-      color: #555;
-    }
-    .card a {
-      display: inline-block;
-      margin-top: 10px;
-      color: #0066cc;
+    a {
+      color: #4da6ff;
       text-decoration: none;
       font-weight: bold;
     }
-    .card a:hover {
+    a:hover {
       text-decoration: underline;
+    }
+    .desc {
+      font-size: 0.9em;
+      color: #bbb;
+      margin-left: 15px;
     }
   </style>
 </head>
 <body>
   <h1>Mon Portfolio</h1>
-  <p style="text-align:center;">Bienvenue ! Voici quelques-uns de mes projets :</p>
+  <p style="text-align:center; color:#bbb;">Bienvenue ! Voici quelques-uns de mes projets :</p>
 
   <h2>📊 Projets Machine Learning</h2>
-  <div class="projects">
-    <div class="card">
-      <h3>Détection de la dépression</h3>
-      <p>Analyse de données étudiantes et prédiction de la dépression à partir de variables cliniques.</p>
-      <a href="https://github.com/emmab-collab/Machine-Learning/tree/main/Student_Mental_Health" target="_blank">Voir le projet</a>
-    </div>
-    <div class="card">
-      <h3>Détection de l’insuffisance cardiaque</h3>
-      <p>Analyse exploratoire et modélisation prédictive sur un dataset médical de patients cardiaques.</p>
-      <a href="https://github.com/emmab-collab/Machine-Learning/blob/main/Heart_failure_detection_EDA_%2B_Modeling.ipynb" target="_blank">Voir le projet</a>
-    </div>
-  </div>
+  <ul>
+    <li>
+      <a href="https://github.com/emmab-collab/Machine-Learning/tree/main/Student_Mental_Health" target="_blank">
+        Détection de la dépression chez les étudiants
+      </a>
+      <div class="desc">Analyse exploratoire et modélisation prédictive sur un dataset étudiant.</div>
+    </li>
+    <li>
+      <a href="https://github.com/emmab-collab/Machine-Learning/blob/main/Heart_failure_detection_EDA_%2B_Modeling.ipynb" target="_blank">
+        Détection de l’insuffisance cardiaque
+      </a>
+      <div class="desc">Analyse exploratoire et modélisation sur données médicales de patients cardiaques.</div>
+    </li>
+  </ul>
 
   <h2>🧠 Projets Deep Learning</h2>
-  <div class="projects">
-    <div class="card">
-      <h3>Biopsies digestives</h3>
-      <p>Classification d’images médicales avec différents modèles : DNN, CNN et ResNet.</p>
-      <a href="https://github.com/emmab-collab/PyTorch" target="_blank">Voir le projet</a>
-    </div>
-    <div class="card">
-      <h3>Détection d’anévrismes (Kaggle)</h3>
-      <p>Projet en cours sur la détection d’anévrismes dans des volumes médicaux 3D.</p>
-      <a href="#" target="_blank">En savoir plus</a>
-    </div>
-  </div>
+  <ul>
+    <li>
+      <a href="https://github.com/emmab-collab/PyTorch" target="_blank">
+        Classification de biopsies digestives
+      </a>
+      <div class="desc">CNN, DNN et ResNet appliqués à l’analyse d’images médicales.</div>
+    </li>
+    <li>
+      <span>Détection d’anévrismes intracrâniens (Kaggle)</span>
+      <div class="desc">Projet en cours : détection sur volumes médicaux 3D.</div>
+    </li>
+  </ul>
 
   <h2>🔧 Compétences</h2>
   <ul>
