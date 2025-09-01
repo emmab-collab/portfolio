@@ -15,7 +15,7 @@
   }
   h1 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #fff;
   }
   h2 {
@@ -24,6 +24,14 @@
     border-bottom: 1px solid #2a2a2e;
     padding-bottom: 6px;
     color: #fff;
+  }
+  h3 {
+    color: #fff;
+  }
+  p.subtitle {
+    text-align: center;
+    color: #bbb;
+    margin-bottom: 30px;
   }
   .grid {
     display: grid;
@@ -39,7 +47,6 @@
   .card h3 {
     margin-top: 0;
     margin-bottom: 8px;
-    color: #fff;
   }
   .card p {
     margin: 0;
@@ -56,11 +63,26 @@
   .card a:hover {
     text-decoration: underline;
   }
+  .contact {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 1px solid #2a2a2e;
+    color: #bbb;
+  }
+  .contact a {
+    color: #4da6ff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .contact a:hover {
+    text-decoration: underline;
+  }
 </style>
 
 <div class="container">
-  <h1>Mon Portfolio</h1>
-  <p style="text-align:center; color:#bbb;">Bienvenue ! Voici quelques-uns de mes projets :</p>
+  <h1>Emmanuelle Benhaim</h1>
+  <p class="subtitle">Portfolio Data Scientist</p>
 
   <h2>📊 Projets Machine Learning</h2>
   <div class="grid">
@@ -88,5 +110,12 @@
       <p>Projet en cours : détection d’anévrismes sur volumes médicaux 3D.</p>
       <a href="#">En savoir plus</a>
     </div>
+  </div>
+
+  <div class="contact">
+    <p>Contactez-moi : 
+      <a href="mailto:emma.benhaim@gmail.com">emma.benhaim@gmail.com</a> | 
+      <a href="https://www.linkedin.com/in/emmanuelle-benhaim-6b1177166/" target="_blank">LinkedIn</a>
+    </p>
   </div>
 </div>
